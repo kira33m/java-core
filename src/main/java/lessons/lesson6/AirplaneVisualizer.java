@@ -13,19 +13,19 @@ public class AirplaneVisualizer {
             if (row <= 5) {
                 // Бизнес-класс: 2 места — проход — 2 места
                 rowDisplay.append(drawSeat(seats, row, 'A'))
-                    .append(drawSeat(seats, row, 'C'))
-                    .append("   ") // проход
-                    .append(drawSeat(seats, row, 'D'))
-                    .append(drawSeat(seats, row, 'F'));
+                        .append(drawSeat(seats, row, 'C'))
+                        .append("   ") // проход
+                        .append(drawSeat(seats, row, 'D'))
+                        .append(drawSeat(seats, row, 'F'));
             } else {
                 // Эконом-класс: 3 места — проход — 3 места
                 rowDisplay.append(drawSeat(seats, row, 'A'))
-                    .append(drawSeat(seats, row, 'B'))
-                    .append(drawSeat(seats, row, 'C'))
-                    .append("   ") // проход
-                    .append(drawSeat(seats, row, 'D'))
-                    .append(drawSeat(seats, row, 'E'))
-                    .append(drawSeat(seats, row, 'F'));
+                        .append(drawSeat(seats, row, 'B'))
+                        .append(drawSeat(seats, row, 'C'))
+                        .append("   ") // проход
+                        .append(drawSeat(seats, row, 'D'))
+                        .append(drawSeat(seats, row, 'E'))
+                        .append(drawSeat(seats, row, 'F'));
             }
 
             System.out.println(rowDisplay);

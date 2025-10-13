@@ -37,7 +37,7 @@ public class Seat implements Serializable {
     }
     public void cancel() throws BookingNotFoundException {
         if (!booked) {
-            throw new BookingNotFoundException("Место " + seatNumber + " не было заброниравано");
+            throw new BookingNotFoundException("Место " + seatNumber + " не было забронировано");
         }
         this.booked = false;
         this.passengerName = null;

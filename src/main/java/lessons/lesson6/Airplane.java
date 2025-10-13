@@ -54,7 +54,7 @@ public class Airplane {
             Seat s = getSeat(seatNumber);
             if (s.isBooked()) {
                 System.out.println("Место " + s.getSeatNumber() +
-                        " забранировано пассажиром " + s.getPassengerName() +
+                        " забронировано пассажиром " + s.getPassengerName() +
                         " (" + s.getSeatClass() + ")");
             } else {
                 System.out.println("Место " + s.getSeatNumber() + " свободно (" + s.getSeatClass() + ")");
