@@ -38,6 +38,7 @@ public class BookingSystem {
                 default -> System.out.println("❌ Неверный выбор, попробуйте снова.");
             }
         }
+        scanner.close();
     }
 
     private void printMenu() {

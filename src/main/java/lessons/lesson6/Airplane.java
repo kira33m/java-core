@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Airplane {
-    private final List<Seat> seats;
+    private List<Seat> seats;
 
     public Airplane() {
         this.seats = new ArrayList<>();
@@ -26,9 +26,10 @@ public class Airplane {
         return seats;
     }
 
-    public Seat getSeat(String seatNumber) throws SeatNotFoundException {
+    private Seat getSeat(String seatNumber) throws SeatNotFoundException {
         for (Seat s : seats) {
-            if (s.getSeatNumber().equals(seatNumber)) {
+            String currentSeatNumber = s.getSeatNumber();
+            if (currentSeatNumber.equals(seatNumber)) {
                 return s;
             }
         }
